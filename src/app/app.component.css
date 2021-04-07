@@ -1,0 +1,58 @@
+.img-container {
+  position: relative;
+  margin-left: 18%;
+  width: 65%;
+  max-width: 400px;
+}
+
+.img-container img {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.img-container-btn {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-image: url(/assets/edit-button.png);
+  background-position: right 7% top 7%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  padding-top: 100%;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img-container-btn:hover {
+  opacity: 0.5;
+}
+
+.modal-content {
+  background-color: black;
+  color: white;
+}
+
+.modal-img {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+}
+
+.modal-footer {
+  background-color: black;
+}
+
+.cancel-btn,
+.save-btn {
+  align-items: center;
+}
+
+.cancel-btn {
+  transform: scale(0.9) translate(-20%, 0);
+}
+
+.save-btn {
+  transform: scale(0.9) translate(20%, 0);
+}

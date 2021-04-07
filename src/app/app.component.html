@@ -1,0 +1,17 @@
+<div class="img-container">
+  <!-- <img [src]="iconLink(details.icon)"> -->
+  <img src="http://clipart-library.com/images/pc7rqMMRi.jpg" style="width: 400px; height: 400px;">
+
+  <!-- Image Modal button -->
+  <button class="img-container-btn" (click)="showModalDialog()"></button>
+  <p-dialog [(visible)]="openModalDisplay" [modal]="true" [closable]="false" [style]="{width: '40%'}"
+    [baseZIndex]="10000" [draggable]="false" [resizable]="false">
+    <p class="modal-content">
+      <img class="modal-img" src="http://clipart-library.com/images/pc7rqMMRi.jpg">
+    </p>
+    <ng-template pTemplate="modal-footer">
+      <button pButton type="button" label="Cancel" class="p-button-raised p-button-rounded p-button-secondary cancel-btn" (click)="openModalDisplay=false"></button>
+      <button pButton type="button" label="Save" class="p-button-raised p-button-rounded p-button-warning save-btn" (click)="openModalDisplay=false"></button>
+    </ng-template>
+  </p-dialog>
+</div>
